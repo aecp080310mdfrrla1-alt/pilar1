@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='hoja.css') }}">
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Bienvenido, {{ usuario|capitalize }}</h2>
+    <p>Has iniciado sesión correctamente.</p>
+
+    <form action="{{ url_for('logout') }}" method="post">
+      <button type="submit">Cerrar sesión</button>
+    </form>
+  </div>
+</body>
+</html>

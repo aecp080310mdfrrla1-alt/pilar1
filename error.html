@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acceso bloqueado</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='hoja.css') }}">
+</head>
+<body>
+  <div class="login-container">
+    <h2 style="color: #ff69b4;">¡Acceso bloqueado!</h2>
+    <p>Se acabaron tus intentos, vuelve a intentar después de {{ tiempo_restante }} segundos.</p>
+    <form action="{{ url_for('index') }}">
+      <button type="submit">Volver al inicio</button>
+    </form>
+  </div>
+</body>
+</html>
