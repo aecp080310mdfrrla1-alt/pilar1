@@ -1,0 +1,88 @@
+/* ---------------------- */
+/*   BASE Y RESET        */
+/* ---------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffe6f0;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------- */
+/* CONTENEDOR LOGIN/DASH  */
+/* ---------------------- */
+.login-container, .dashboard {
+    background: #fff0f5;
+    width: 360px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #ffb6c1;
+}
+
+/* Títulos */
+.login-container h2, .dashboard h2 {
+    color: #ff69b4;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ffb6c1;
+    outline: none;
+}
+
+/* Botones */
+button {
+    background: #ff69b4;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff85c1;
+}
+
+/* Mensajes de error */
+p[style*="color:red"] {
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Mensajes en error.html */
+.login-container p, .dashboard p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Responsive simple */
+@media (max-width: 480px) {
+    .login-container, .dashboard {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
